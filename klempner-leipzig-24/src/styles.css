@@ -1,0 +1,386 @@
+@font-face {
+	font-family: 'Epilogue';
+	src: url(/fonts/Epilogue-ExtraLight.woff) format('woff');
+	font-style: normal;
+	font-weight: 200;
+}
+@font-face {
+	font-family: 'Epilogue';
+	src: url(/fonts/Epilogue-Regular.woff) format('woff');
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Epilogue';
+	src: url(/fonts/Epilogue-SemiBold.woff) format('woff');
+	font-style: normal;
+	font-weight: 600;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		font-family: 'Epilogue', sans-serif;
+		color: #1a271f;
+		line-height: 150%;
+	}
+}
+
+@keyframes from-left {
+	0% {
+		transform: translateX(-50px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes from-right {
+	0% {
+		transform: translateX(50px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes from-right-width {
+	0% {
+		clip-path: inset(0 0 0 100%);
+	}
+	100% {
+		clip-path: inset(0 0 0 0);
+	}
+}
+
+@keyframes from-top {
+	0% {
+		transform: translateY(-50px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes fade-out {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.splide__slide {
+	height: 100%;
+}
+
+.accent-shadow {
+	box-shadow: 0px 4px 20px 0px rgba(255, 214, 0, 0.5);
+	transition: 0.3s ease-in-out all;
+}
+
+.button {
+	transition: 0.3s ease-in-out all;
+}
+
+.button:hover {
+	scale: 1.05;
+}
+
+.accent-shadow:hover {
+	box-shadow: 0px 4px 50px 0px rgba(255, 214, 0, 0.7);
+	scale: 1.05;
+}
+
+.small {
+	font-size: 12px;
+	font-family: Epilogue;
+	font-weight: 400;
+	letter-spacing: 0em;
+}
+.base {
+	font-size: 16px;
+	font-family: Epilogue;
+	font-weight: 400;
+	letter-spacing: 0em;
+	line-height: 150%;
+}
+.h5 {
+	font-size: 21px;
+	font-family: Epilogue;
+	font-weight: 400;
+	letter-spacing: 0em;
+}
+.h4 {
+	font-size: 28px;
+	font-family: Epilogue;
+	font-weight: 400;
+	letter-spacing: 0em;
+}
+.h3 {
+	font-size: 38px;
+	font-family: Epilogue;
+	font-weight: 400;
+	letter-spacing: -0.02em;
+}
+.h2 {
+	font-size: 51px;
+	font-family: Epilogue;
+	font-weight: 400;
+	letter-spacing: -0.03em;
+}
+.h1 {
+	font-size: 67px;
+	font-family: Epilogue;
+	font-weight: 400;
+	letter-spacing: -0.03em;
+}
+.extra-small {
+	font-size: 9px;
+	font-family: Epilogue;
+	font-weight: 400;
+	letter-spacing: 0em;
+}
+.h1-light {
+	font-size: 67px;
+	font-family: Epilogue;
+	font-weight: 200;
+	letter-spacing: -0.03em;
+}
+.h2-light {
+	font-size: 51px;
+	font-family: Epilogue;
+	font-weight: 200;
+	letter-spacing: -0.03em;
+}
+.h3-light {
+	font-size: 38px;
+	font-family: Epilogue;
+	font-weight: 200;
+	letter-spacing: -0.02em;
+}
+.h4-light {
+	font-size: 28px;
+	font-family: Epilogue;
+	font-weight: 200;
+	letter-spacing: 0em;
+}
+.h5-light {
+	font-size: 21px;
+	font-family: Epilogue;
+	font-weight: 200;
+	letter-spacing: 0em;
+}
+.base-light {
+	font-size: 16px;
+	font-family: Epilogue;
+	font-weight: 200;
+	letter-spacing: 0em;
+	line-height: 150%;
+}
+.h1-bold {
+	font-size: 67px;
+	font-family: Epilogue;
+	font-weight: 600;
+	letter-spacing: -0.03em;
+}
+.h2-bold {
+	font-size: 51px;
+	font-family: Epilogue;
+	font-weight: 600;
+	letter-spacing: -0.03em;
+}
+.h3-bold {
+	font-size: 38px;
+	font-family: Epilogue;
+	font-weight: 600;
+	letter-spacing: -0.03em;
+}
+.h4-bold {
+	font-size: 28px;
+	font-family: Epilogue;
+	font-weight: 600;
+	letter-spacing: -0.02em;
+}
+.h5-bold {
+	font-size: 21px;
+	font-family: Epilogue;
+	font-weight: 600;
+	letter-spacing: 0em;
+}
+.base-bold {
+	font-size: 16px;
+	font-family: Epilogue;
+	font-weight: 600;
+	letter-spacing: 0em;
+	line-height: 150%;
+}
+.small-bold {
+	font-size: 12px;
+	font-family: Epilogue;
+	font-weight: 600;
+	letter-spacing: 0em;
+}
+.extra-small-bold {
+	font-size: 9px;
+	font-family: Epilogue;
+	font-weight: 600;
+	letter-spacing: 0em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	line-height: 1;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 120px;
+}
+
+.splide__track {
+	padding: 15px 0 40px;
+	cursor: grab;
+}
+
+.max-w-7xl {
+	max-width: 82.5rem;
+}
+#mobile-menu > button {
+	position: relative;
+	color: #1a271f !important;
+	padding: 4px;
+	background-color: white;
+	border-radius: 4px;
+	margin: 0;
+}
+.open + #container {
+	/* Box shadow to the right 20% with no blur and black 20% opacity */
+	box-shadow: 2400px 0 0 2000px rgba(0, 0, 0, 0.2);
+}
+
+div#container {
+	margin-top: -20px;
+	height: calc(100vh + 20px) !important;
+}
+
+/*effect style*/
+.shadow {
+	box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+.shadow-light {
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1024px) {
+	.h5 {
+		font-size: 18px; /* ~85% of 21px */
+	}
+	.h4 {
+		font-size: 24px; /* ~85% of 28px */
+	}
+	.h3 {
+		font-size: 32px; /* ~85% of 38px */
+	}
+	.h2 {
+		font-size: 43px; /* ~85% of 51px */
+	}
+	.h1 {
+		font-size: 57px; /* ~85% of 67px */
+	}
+	.h1-light {
+		font-size: 57px; /* ~85% of 67px */
+	}
+	.h2-light {
+		font-size: 43px; /* ~85% of 51px */
+	}
+	.h3-light {
+		font-size: 32px; /* ~85% of 38px */
+	}
+	.h4-light {
+		font-size: 24px; /* ~85% of 28px */
+	}
+	.h5-light {
+		font-size: 18px; /* ~85% of 21px */
+	}
+	.h1-bold {
+		font-size: 57px; /* ~85% of 67px */
+	}
+	.h2-bold {
+		font-size: 43px; /* ~85% of 51px */
+	}
+	.h3-bold {
+		font-size: 32px; /* ~85% of 38px */
+	}
+	.h4-bold {
+		font-size: 24px; /* ~85% of 28px */
+	}
+	.h5-bold {
+		font-size: 18px; /* ~85% of 21px */
+	}
+}
+
+@media (max-width: 480px) {
+	.h5 {
+		font-size: 18px; /* ~85% of 21px */
+	}
+	.h4 {
+		font-size: 24px; /* ~85% of 28px */
+	}
+	.h3 {
+		font-size: 28px; /* ~85% of 38px */
+	}
+	.h2 {
+		font-size: 36px; /* ~85% of 51px */
+	}
+	.h1 {
+		font-size: 57px; /* ~85% of 67px */
+	}
+	.h1-light {
+		font-size: 57px; /* ~85% of 67px */
+	}
+	.h2-light {
+		font-size: 36px; /* ~85% of 51px */
+	}
+	.h3-light {
+		font-size: 28px; /* ~85% of 38px */
+	}
+	.h4-light {
+		font-size: 24px; /* ~85% of 28px */
+	}
+	.h5-light {
+		font-size: 18px; /* ~85% of 21px */
+	}
+	.h1-bold {
+		font-size: 57px; /* ~85% of 67px */
+	}
+	.h2-bold {
+		font-size: 36px; /* ~85% of 51px */
+	}
+	.h3-bold {
+		font-size: 28px; /* ~85% of 38px */
+	}
+	.h4-bold {
+		font-size: 24px; /* ~85% of 28px */
+	}
+	.h5-bold {
+		font-size: 18px; /* ~85% of 21px */
+	}
+	.open + #container {
+		/* Box shadow to the right 20% with no blur and black 20% opacity */
+		box-shadow: 400px 0 0 2000px rgba(0, 0, 0, 0.2);
+	}
+}
