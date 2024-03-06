@@ -43,20 +43,51 @@
 	import Verstopfung from '../lib/assets/images/Image-14.webp';
 	import Heizungsausfall from '../lib/assets/images/Image-2.webp';
 	import AnfrageFoto from '../lib/assets/images/Image-22.webp';
+
+	async function handleSubmit(event) {
+		event.preventDefault();
+		const form = event.target;
+		const status = document.getElementById('klempner-form-status');
+		const data = new FormData(form);
+
+		try {
+			const response = await fetch(form.action, {
+				method: form.method,
+				body: data,
+				headers: {
+					Accept: 'application/json'
+				}
+			});
+
+			if (response.ok) {
+				status.style.opacity = '1';
+				form.reset();
+			} else {
+				const data = await response.json();
+				if (Object.hasOwnProperty.call(data, 'errors')) {
+					status.textContent = data.errors.map((error) => error.message).join(', ');
+				} else {
+					status.textContent = 'Oops! There was a problem submitting your form';
+				}
+			}
+		} catch (error) {
+			status.textContent = 'Oops! There was a problem submitting your form';
+		}
+	}
 </script>
 
 <div class="bg-primary text-white flex justify-center py-2 gap-5 mobile:hidden">
-	<a href="tel:012345678" class="flex gap-1 small-bold">
+	<a href="tel:015223186054" class="flex gap-1 small-bold">
 		<img src={PhoneW16} alt="" />
-		012345678
+		015223186054
 	</a>
 	<div class="flex gap-1 small-bold">
 		<img src={MailW16} alt="" />
-		anfrage@klempner-notservice.de
+		info@klempner-notservice.de
 	</div>
 	<div class="flex gap-1 small-bold">
 		<img src={Pin16} alt="" />
-		012345678
+		Demmeringstraße 57 | 04177 Leipzig
 	</div>
 </div>
 <div
@@ -546,8 +577,8 @@
 				<Testimonial
 					name="Andreas K."
 					content="Heizung fiel im Winter aus. Die Männer brachten sie in Rekordzeit wieder in Gang. Großes Lob!"
-					reasonIcon={Pipe16}
-					reason="Verstopfung"
+					reasonIcon={Heater16}
+					reason="Heizungsausfall"
 				/>
 			</SplideSlide>
 		</Splide>
@@ -614,9 +645,11 @@
 						sich schnellstmöglich bei Ihnen melden.
 					</p>
 					<form
+						id="klempner-form"
 						action="https://formspree.io/f/mrgwjbgd"
 						method="POST"
 						class="flex flex-col gap-5 items-start"
+						on:submit={handleSubmit}
 					>
 						<!-- Name Field -->
 						<div class="flex flex-col w-full gap-1">
@@ -679,11 +712,19 @@
 						</div>
 
 						<!-- Submit Button -->
-						<input
-							class="bg-accent mt-5 shad rounded-lg gap-2 cursor-pointer accent-shadow flex py-3 px-5 items-center h5-bold leading-none button mobile:mt-0"
-							type="submit"
-							value="Absenden"
-						/>
+						<div class="flex gap-5 items-baseline mobile:flex-col">
+							<input
+								class="bg-accent mt-5 shad rounded-lg gap-2 cursor-pointer accent-shadow flex py-3 px-5 items-center h5-bold leading-none button mobile:mt-0"
+								type="submit"
+								value="Absenden"
+							/>
+							<p
+								class="mt-6 mobile:mt-0 font-bold opacity-0 transition-opacity"
+								id="klempner-form-status"
+							>
+								Deine Anfrage wurde abgesendet!
+							</p>
+						</div>
 					</form>
 				</div>
 				<div class="rounded-3xl bg-whtie shadow-xl overflow-hidden w-1/2 big-tablet:w-full">
@@ -694,9 +735,9 @@
 					/>
 					<div class="p-10 flex flex-col bg-white gap-10 mobile:gap-5 mobile:p-5">
 						<h3 class="h3-bold mobile:text-2xl">Kontaktinformationen</h3>
-						<a href="tel:012345678" class="flex gap-2 base-bold">
+						<a href="tel:015223186054" class="flex gap-2 base-bold">
 							<img src={Phone24} alt="Anrufen" />
-							0123-45678910
+							0152-23186054
 						</a>
 						<a href="mailto:info@klempner-leipzig-24.de" class="flex gap-2 base-bold">
 							<img src={Mail24} alt="Anrufen" />
@@ -721,9 +762,9 @@
 			<div>Rund um die Uhr für <b>SIE</b> da!</div>
 		</div>
 		<div class="flex flex-col gap-5">
-			<a href="tel:012345678" class="flex gap-2 base-bold">
+			<a href="tel:015223186054" class="flex gap-2 base-bold">
 				<img src={Phone24} alt="Anrufen" />
-				0123-45678910
+				0152-23186054
 			</a>
 			<a href="mailto:info@klempner-leipzig-24.de" class="flex gap-2 base-bold">
 				<img src={Mail24} alt="Anrufen" />
