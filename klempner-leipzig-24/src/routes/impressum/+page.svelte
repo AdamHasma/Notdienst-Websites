@@ -10,9 +10,9 @@
 </script>
 
 <div class="bg-primary text-white flex justify-center py-2 gap-5 mobile:hidden">
-	<a href="tel:012345678" class="flex gap-1 small-bold">
+	<a href="tel:015223186054" class="flex gap-1 small-bold">
 		<img src={PhoneW16} alt="" />
-		012345678
+		015223186054
 	</a>
 	<div class="flex gap-1 small-bold">
 		<img src={MailW16} alt="" />
@@ -20,7 +20,7 @@
 	</div>
 	<div class="flex gap-1 small-bold">
 		<img src={Pin16} alt="" />
-		012345678
+		Demmeringstraße 57 | 04177 Leipzig
 	</div>
 </div>
 <div
@@ -65,32 +65,45 @@
 
 <main class="mt-20 tablet:mt-10 mobile:mt-5">
 	<section class="max-w-7xl px-5 mx-auto py-20 flex flex-col">
-		<h2 class="h2-bold mb-6">Impressum INHALT ÄNDERN</h2>
+		<h2 class="h2-bold mb-6">Impressum</h2>
 
 		<!-- Section: TMG Details -->
 		<h3 class="text-xl font-bold mt-4">Angaben gemäß § 5 TMG</h3>
 		<address class="mt-4">
-			<p class="">ROTREC UG</p>
-			<p class="">Calenbergerstr. 25</p>
-			<p class="mb-2">31171 Nordstemmen</p>
+			<p class="">Klempner Leipzig GmbH</p>
+			<p class="">Demmeringstraße 57</p>
+			<p class="mb-2">04177 Leipzig</p>
 		</address>
-		<p class="mb-2">Handelsregister: HRB 207728</p>
-		<p class="">Registergericht: Hildesheim</p>
+		<p class="mb-2">Handelsregister: HRB 42299</p>
+		<p class="">Registergericht: Leipzig</p>
 
 		<h4 class="text-lg font-bold mt-6">Vertreten durch:</h4>
-		<address class="mt-2">
-			<p class="">Karsten Rose</p>
-			<p class="">Calenbergerstr. 25</p>
-			<p class="">31171 Nordstemmen</p>
-		</address>
+		<p class="mt-2">Abdurahman Achmersaev</p>
 
 		<!-- Section: Contact -->
 		<h3 class="text-xl font-bold mb-2 mt-6">Kontakt</h3>
-		<p class="">Telefon: 05069-4807059</p>
+		<p class="">Telefon: 0152-23186054</p>
 		<p class="">
-			E-Mail: <a href="mailto:k.rose@rotrec-energy.com" class="text-blue-500 underline"
-				>k.rose@rotrec-energy.com</a
+			E-Mail: <a href="mailto:info@klempner-leipzig-24.de" class="underline"
+				>info@klempner-leipzig-24.de</a
 			>
+		</p>
+
+		<!-- <h3 class="text-xl font-bold mb-2 mt-6">Umsatzsteuer-ID</h3>
+		<p>
+			Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect; 27 a Umsatzsteuergesetz:<br />
+			0000000
+		</p> -->
+
+		<h3 class="text-xl font-bold mb-2 mt-6">Berufsbezeichnung und berufsrechtliche Regelungen</h3>
+		<p>
+			Berufsbezeichnung:<br />
+			Handwerker
+		</p>
+		<p>
+			<br />
+			Verliehen in:<br />
+			Deutschland
 		</p>
 
 		<!-- Section: Dispute Resolution -->
@@ -104,7 +117,7 @@
 
 		<!-- Source Link -->
 		<p class="mt-6">
-			Quelle: <a href="https://www.e-recht24.de" class="text-blue-500 underline"
+			Quelle: <a href="https://www.e-recht24.de" class="font-bold underline"
 				>https://www.e-recht24.de</a
 			>
 		</p>
@@ -119,9 +132,9 @@
 			<div>Rund um die Uhr für <b>SIE</b> da!</div>
 		</div>
 		<div class="flex flex-col gap-5">
-			<a href="tel:012345678" class="flex gap-2 base-bold">
+			<a href="tel:015223186054" class="flex gap-2 base-bold">
 				<img src={Phone24} alt="Anrufen" />
-				0123-45678910
+				0152-23186054
 			</a>
 			<a href="mailto:info@klempner-leipzig-24.de" class="flex gap-2 base-bold">
 				<img src={Mail24} alt="Anrufen" />
