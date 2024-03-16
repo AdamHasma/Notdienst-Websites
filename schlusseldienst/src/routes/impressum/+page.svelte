@@ -4,7 +4,7 @@
 	import PhoneW16 from '../../lib/assets/icons/phone-w-16.svg';
 	import MailW16 from '../../lib/assets/icons/mail-w-16.svg';
 	import Pin16 from '../../lib/assets/icons/pin-w-16.svg';
-	import Logo from '../../lib/assets/schluesseldienst-leipzig-247-logo.svg';
+	import Logo from '../../lib/assets/klempner-leipzig-24-logo.svg';
 	import Mail24 from '../../lib/assets/icons/mail-24.svg';
 	import Phone24 from '../../lib/assets/icons/phone-24.svg';
 </script>

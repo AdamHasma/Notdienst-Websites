@@ -13,9 +13,9 @@
 	import PhoneW16 from '../lib/assets/icons/phone-w-16.svg';
 	import MailW16 from '../lib/assets/icons/mail-w-16.svg';
 	import Pin16 from '../lib/assets/icons/pin-w-16.svg';
-	import Logo from '../lib/assets/schluesseldienst-leipzig-247-logo.svg';
+	import Logo from '../lib/assets/klempner-leipzig-24-logo.svg';
 	import HeroImage from '../lib/assets/images/Image-12.webp';
-	import Wappen from '../lib/assets/images/Marketingwappen 4c.png';
+	import Wappen from '../lib/assets/images/Marketingwappen-4c.png';
 	import Check16 from '../lib/assets/icons/check-16.svg';
 	import Time64 from '../lib/assets/icons/time-64.svg';
 	import Time24 from '../lib/assets/icons/time-24.svg';
@@ -78,15 +78,15 @@
 
 <div class="bg-primary text-white flex justify-center py-2 gap-5 mobile:hidden">
 	<a href="tel:015223186054" class="flex gap-1 small-bold">
-		<img src={PhoneW16} alt="" />
+		<img src={PhoneW16} alt="Anrufen Icon" />
 		015223186054
 	</a>
 	<div class="flex gap-1 small-bold">
-		<img src={MailW16} alt="" />
+		<img src={MailW16} alt="E-Mail Icon" />
 		info@klempner-notservice.de
 	</div>
 	<div class="flex gap-1 small-bold">
-		<img src={Pin16} alt="" />
+		<img src={Pin16} alt="Standort Icon" />
 		Demmeringstraße 57 | 04177 Leipzig
 	</div>
 </div>
@@ -96,8 +96,8 @@
 	<nav
 		class="flex rounded-2xl border shadow-xl items-center bg-white border-primary p-5 justify-between mobile:border-0 mobile:rounded-none"
 	>
-		<a href="#start" class="mobile:w-24 w-60">
-			<img src={Logo} alt="" />
+		<a href="#start" class="mobile:w-24">
+			<img src={Logo} alt="Klempner Leipzig 24/7" />
 		</a>
 		<div class="flex big-tablet:hidden gap-5 items-start">
 			<a
@@ -123,7 +123,7 @@
 				<BurgerMenu backgroundColor="#f6f6f2" padding={'20px'} menuColor="#1a271f" width="80%">
 					<div class="flex flex-col gap-10">
 						<a href="/#start">
-							<img class="w-40 mx-auto" src={Logo} alt="" />
+							<img class="w-40 mx-auto" src={Logo} alt="Klempner Leipzig 24/7" />
 						</a>
 						<div class="flex flex-col gap-5 items-center">
 							<a href="/#Vorteile" class="leading-tight h5-bold px-4 py-2">Vorteile</a>
@@ -144,7 +144,11 @@
 <main class="mt-20 tablet:mt-10 mobile:mt-5">
 	<section id="start" class="">
 		<div class="absolute top-10 -z-10 tablet:block hidden mobile:top-0">
-			<img src={HeroImage} class="w-full h-[550px] object-cover" alt="" />
+			<img
+				src={HeroImage}
+				class="w-full h-[550px] object-cover"
+				alt="Handwerker untersucht eine Rohrverunreinigung für den Kunden in Not"
+			/>
 			<div class="absolute inset-0 bg-black opacity-50" />
 		</div>
 		<div class="flex w-full items-center tablet:flex-col tablet:gap-10 mobile:gap-5">
@@ -161,18 +165,18 @@
 						class="pr-48 big-tablet:pr-32 flex flex-col gap-10 tablet:pr-0 tablet:items-center tablet:gap-5 mobile:gap-2"
 					>
 						<div class="flex items-center gap-3 h5">
-							<img width="40" src={Wappen} alt="Wappen Leipzig" />
+							<img width="40" src={Wappen} alt="Leipzig Wappen" />
 							<p class="tablet:text-white">In Leipzig</p>
 						</div>
 						<div class="flex flex-col gap-5">
-							<h2
+							<h1
 								class="h2-bold leading-none tablet:text-center tablet:text-white
 						"
 							>
 								Klempner. <br />
 								Notfallservice. <br />
 								<span class="text-secondary tablet:text-accent">Lösungsorientiert.</span>
-							</h2>
+							</h1>
 							<p class="base opacity-70 tablet:text-center tablet:text-white">
 								Mit unserem 24/7 Notdienst sind wir stets bereit, Ihnen in jeder Situation zu
 								helfen. Professionelle, zuverlässige Hilfe, wenn Sie sie am meisten benötigen. Ihr
@@ -203,19 +207,19 @@
 									class="flex flex-col gap-3 tablet:flex-row tablet:flex-wrap tablet:justify-center mobile:hidden"
 								>
 									<div class="flex gap-2">
-										<img src={Check16} alt="" />
+										<img src={Check16} alt="Leistung Nr 1" />
 										<p class="leading-none">Wasserschaden</p>
 									</div>
 									<div class="flex gap-2">
-										<img src={Check16} alt="" />
+										<img src={Check16} alt="Leistung Nr 2" />
 										<p class="leading-none">Rohrverunreinigung</p>
 									</div>
 									<div class="flex gap-2">
-										<img src={Check16} alt="" />
+										<img src={Check16} alt="Leistung Nr 3" />
 										<p class="leading-none">Verstopfung</p>
 									</div>
 									<div class="flex gap-2">
-										<img src={Check16} alt="" />
+										<img src={Check16} alt="Leistung Nr 4" />
 										<p class="leading-none">Heizungsausfall</p>
 									</div>
 								</div>
@@ -240,7 +244,7 @@
 						<img
 							class="rounded-s-[40px] w-full max-h-[475px] big-tablet:h-96 object-cover"
 							src={HeroImage}
-							alt=""
+							alt="Handwerker untersucht eine Rohrverunreinigung für den Kunden in Not"
 						/>
 					</Saos>
 				</div>
@@ -249,19 +253,19 @@
 				class="flex-col gap-3 tablet:flex-row tablet:flex-wrap tablet:justify-center hidden mobile:flex"
 			>
 				<div class="flex gap-2">
-					<img src={Check16} alt="" />
+					<img src={Check16} alt="Leistung Nr 1" />
 					<p class="leading-none">Wasserschaden</p>
 				</div>
 				<div class="flex gap-2">
-					<img src={Check16} alt="" />
+					<img src={Check16} alt="Leistung Nr 2" />
 					<p class="leading-none">Rohrverunreinigung</p>
 				</div>
 				<div class="flex gap-2">
-					<img src={Check16} alt="" />
+					<img src={Check16} alt="Leistung Nr 3" />
 					<p class="leading-none">Verstopfung</p>
 				</div>
 				<div class="flex gap-2">
-					<img src={Check16} alt="" />
+					<img src={Check16} alt="Leistung Nr 4" />
 					<p class="leading-none">Heizungsausfall</p>
 				</div>
 			</div>
@@ -736,15 +740,15 @@
 					<div class="p-10 flex flex-col bg-white gap-10 mobile:gap-5 mobile:p-5">
 						<h3 class="h3-bold mobile:text-2xl">Kontaktinformationen</h3>
 						<a href="tel:015223186054" class="flex gap-2 base-bold">
-							<img src={Phone24} alt="Anrufen" />
+							<img src={Phone24} alt="Anruf Icon" />
 							0152-23186054
 						</a>
 						<a href="mailto:info@klempner-leipzig-24.de" class="flex gap-2 base-bold">
-							<img src={Mail24} alt="Anrufen" />
+							<img src={Mail24} alt="E-Mail Icon" />
 							info@klempner-leipzig-24.de
 						</a>
 						<div class="flex gap-2 base-bold">
-							<img src={Time24} alt="Anrufen" />
+							<img src={Time24} alt="Öffnungszeiten: Rund um die Uhr" />
 							0:00 - 23:59 | 365 Tage im Jahr
 						</div>
 					</div>
@@ -763,11 +767,11 @@
 		</div>
 		<div class="flex flex-col gap-5">
 			<a href="tel:015223186054" class="flex gap-2 base-bold">
-				<img src={Phone24} alt="Anrufen" />
+				<img src={Phone24} alt="Anrufen Icon" />
 				0152-23186054
 			</a>
 			<a href="mailto:info@klempner-leipzig-24.de" class="flex gap-2 base-bold">
-				<img src={Mail24} alt="Anrufen" />
+				<img src={Mail24} alt="E-Mail Icon" />
 				info@klempner-leipzig-24.de
 			</a>
 		</div>
