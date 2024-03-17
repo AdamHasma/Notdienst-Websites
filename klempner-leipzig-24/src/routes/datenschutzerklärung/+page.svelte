@@ -16,7 +16,7 @@
 	</a>
 	<div class="flex gap-1 small-bold">
 		<img src={MailW16} alt="" />
-		anfrage@klempner-notservice.de
+		info@klempner-notservice.de
 	</div>
 	<div class="flex gap-1 small-bold">
 		<img src={Pin16} alt="" />
