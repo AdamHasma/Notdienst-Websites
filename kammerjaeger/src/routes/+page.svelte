@@ -302,8 +302,8 @@
 					class="border-2 rounded-3xl p-10 border-primary bg-white flex flex-col items-center mt-10 max-w-5xl gap-10 shadow-lg relative mobile:gap-5 mobile:p-5"
 				>
 					<div class="flex flex-col gap-2">
-						<h2 class="h2-bold tablet:text-center">
-							Schädlingsbekämpfung <span class="text-secondary">Leipzig</span>
+						<h2 class="h2-bold mobile:hyphens-auto tablet:text-center">
+							Schädlingsbekämpfung <span class="text-secondary mobile:hyphens-none">Leipzig</span>
 						</h2>
 						<p class="opacity-70 text-center">Ihre Vorteile bei uns!</p>
 					</div>

@@ -36,19 +36,19 @@
 				<h3 class="h3-bold text-secondary">{title}</h3>
 				<p class="base opacity-70">{@html content}</p>
 				<div class="flex flex-wrap gap-x-10 gap-y-5 big-tablet:max-w-xl">
-					<div class="flex gap-2 flex-none base-bold">
+					<div class="flex gap-2 flex-none mobile:flex-auto base-bold">
 						<img src={icon1} alt={point1} />
 						{point1}
 					</div>
-					<div class="flex gap-2 flex-none base-bold">
+					<div class="flex gap-2 flex-none mobile:flex-auto base-bold">
 						<img src={icon2} alt={point2} />
 						{point2}
 					</div>
-					<div class="flex gap-2 flex-none base-bold">
+					<div class="flex gap-2 flex-none mobile:flex-auto base-bold">
 						<img src={icon3} alt={point3} />
 						{point3}
 					</div>
-					<div class="flex gap-2 flex-none base-bold">
+					<div class="flex gap-2 flex-none mobile:flex-auto base-bold">
 						<img src={icon4} alt={point4} />
 						{point4}
 					</div>
