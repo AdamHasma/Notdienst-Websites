@@ -227,19 +227,19 @@
 								>
 									<div class="flex gap-2">
 										<img src={Check16} alt="Leistung Nr 1" />
-										<p class="leading-none">Schädlingsbekämpfung</p>
+										<p class="leading-none font-semibold">Schädlingsbekämpfung</p>
 									</div>
 									<div class="flex gap-2">
 										<img src={Check16} alt="Leistung Nr 2" />
-										<p class="leading-none">Präventivmaßnahmen</p>
+										<p class="leading-none font-semibold">Präventivmaßnahmen</p>
 									</div>
 									<div class="flex gap-2">
 										<img src={Check16} alt="Leistung Nr 3" />
-										<p class="leading-none">Desinfektionsservice</p>
+										<p class="leading-none font-semibold">Desinfektionsservice</p>
 									</div>
 									<div class="flex gap-2">
 										<img src={Check16} alt="Leistung Nr 4" />
-										<p class="leading-none">Beratung & Analyse</p>
+										<p class="leading-none font-semibold">Beratung & Analyse</p>
 									</div>
 								</div>
 							</div>
@@ -269,23 +269,23 @@
 				</div>
 			</div>
 			<div
-				class="flex-col gap-3 tablet:flex-row tablet:flex-wrap tablet:justify-center hidden mobile:flex"
+				class="flex-col gap-3 tablet:flex-row tablet:flex-wrap tablet:justify-center hidden mobile:flex mobile:flex-col"
 			>
 				<div class="flex gap-2">
 					<img src={Check16} alt="Leistung Nr 1" />
-					<p class="leading-none">Schädlingsbekämpfung</p>
+					<p class="leading-none font-semibold">Schädlingsbekämpfung</p>
 				</div>
 				<div class="flex gap-2">
 					<img src={Check16} alt="Leistung Nr 2" />
-					<p class="leading-none">Präventivmaßnahmen</p>
+					<p class="leading-none font-semibold">Präventivmaßnahmen</p>
 				</div>
 				<div class="flex gap-2">
 					<img src={Check16} alt="Leistung Nr 3" />
-					<p class="leading-none">Desinfektionsservice</p>
+					<p class="leading-none font-semibold">Desinfektionsservice</p>
 				</div>
 				<div class="flex gap-2">
 					<img src={Check16} alt="Leistung Nr 4" />
-					<p class="leading-none">Beratung & Analyse</p>
+					<p class="leading-none font-semibold">Beratung & Analyse</p>
 				</div>
 			</div>
 		</div>

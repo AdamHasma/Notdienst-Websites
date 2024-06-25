@@ -208,26 +208,26 @@
 								>
 									<div class="flex gap-2">
 										<img src={Check16} alt="Leistung Nr 1" />
-										<p class="leading-none">Rohr-Inspektion</p>
+										<p class="leading-none font-semibold">Rohr-Inspektion</p>
 									</div>
 									<div class="flex gap-2">
 										<img src={Check16} alt="Leistung Nr 2" />
-										<p class="leading-none">Abflussreinigung</p>
+										<p class="leading-none font-semibold">Abflussreinigung</p>
 									</div>
 									<div class="flex gap-2">
 										<img src={Check16} alt="Leistung Nr 3" />
-										<p class="leading-none">Kanalreinigung</p>
+										<p class="leading-none font-semibold">Kanalreinigung</p>
 									</div>
 									<div class="flex gap-2">
 										<img src={Check16} alt="Leistung Nr 4" />
-										<p class="leading-none">Rohrsanierung</p>
+										<p class="leading-none font-semibold">Rohrsanierung</p>
 									</div>
 								</div>
 							</div>
 							<div class="flex flex-col relative items-center">
 								<Button type={2} />
 								<a href="#Anfrage" class="small opacity-70 absolute -bottom-7"
-									>Oder füllen Sie unseren Formular aus</a
+									>Oder füllen Sie unser Formular aus</a
 								>
 							</div>
 						</div>
@@ -250,23 +250,23 @@
 				</div>
 			</div>
 			<div
-				class="flex-col gap-3 tablet:flex-row tablet:flex-wrap tablet:justify-center hidden mobile:flex"
+				class="flex-col gap-3 tablet:flex-row tablet:flex-wrap tablet:justify-center hidden mobile:flex mobile:flex-col"
 			>
 				<div class="flex gap-2">
 					<img src={Check16} alt="Leistung Nr 1" />
-					<p class="leading-none">Rohr-Inspektion</p>
+					<p class="leading-none font-semibold">Rohr-Inspektion</p>
 				</div>
 				<div class="flex gap-2">
 					<img src={Check16} alt="Leistung Nr 2" />
-					<p class="leading-none">Abflussreinigung</p>
+					<p class="leading-none font-semibold">Abflussreinigung</p>
 				</div>
 				<div class="flex gap-2">
 					<img src={Check16} alt="Leistung Nr 3" />
-					<p class="leading-none">Kanalreinigung</p>
+					<p class="leading-none font-semibold">Kanalreinigung</p>
 				</div>
 				<div class="flex gap-2">
 					<img src={Check16} alt="Leistung Nr 4" />
-					<p class="leading-none">Rohrsanierung</p>
+					<p class="leading-none font-semibold">Rohrsanierung</p>
 				</div>
 			</div>
 		</div>

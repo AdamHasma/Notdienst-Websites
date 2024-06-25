@@ -7,7 +7,7 @@ export function accordion(node, isOpen) {
 			let animation = node.animate(
 				[
 					{
-						height: initialHeight + 'px',
+						height: 'auto',
 						overflow: 'hidden',
 						paddingTop: '16px'
 					},

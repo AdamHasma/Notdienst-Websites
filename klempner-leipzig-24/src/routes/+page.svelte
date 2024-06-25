@@ -208,26 +208,26 @@
 								>
 									<div class="flex gap-2">
 										<img src={Check16} alt="Leistung Nr 1" />
-										<p class="leading-none">Wasserschaden</p>
+										<p class="leading-none font-semibold">Wasserschaden</p>
 									</div>
 									<div class="flex gap-2">
 										<img src={Check16} alt="Leistung Nr 2" />
-										<p class="leading-none">Rohrverunreinigung</p>
+										<p class="leading-none font-semibold">Rohrverunreinigung</p>
 									</div>
 									<div class="flex gap-2">
 										<img src={Check16} alt="Leistung Nr 3" />
-										<p class="leading-none">Verstopfung</p>
+										<p class="leading-none font-semibold">Verstopfung</p>
 									</div>
 									<div class="flex gap-2">
 										<img src={Check16} alt="Leistung Nr 4" />
-										<p class="leading-none">Heizungsausfall</p>
+										<p class="leading-none font-semibold">Heizungsausfall</p>
 									</div>
 								</div>
 							</div>
 							<div class="flex flex-col relative items-center">
 								<Button type={2} />
 								<a href="#Anfrage" class="small opacity-70 absolute -bottom-7"
-									>Oder füllen Sie unseren Formular aus</a
+									>Oder füllen Sie unser Formular aus</a
 								>
 							</div>
 						</div>
@@ -250,23 +250,23 @@
 				</div>
 			</div>
 			<div
-				class="flex-col gap-3 tablet:flex-row tablet:flex-wrap tablet:justify-center hidden mobile:flex"
+				class="flex-col gap-3 tablet:flex-row tablet:flex-wrap tablet:justify-center hidden mobile:flex mobile:flex-col"
 			>
 				<div class="flex gap-2">
 					<img src={Check16} alt="Leistung Nr 1" />
-					<p class="leading-none">Wasserschaden</p>
+					<p class="leading-none font-semibold">Wasserschaden</p>
 				</div>
 				<div class="flex gap-2">
 					<img src={Check16} alt="Leistung Nr 2" />
-					<p class="leading-none">Rohrverunreinigung</p>
+					<p class="leading-none font-semibold">Rohrverunreinigung</p>
 				</div>
 				<div class="flex gap-2">
 					<img src={Check16} alt="Leistung Nr 3" />
-					<p class="leading-none">Verstopfung</p>
+					<p class="leading-none font-semibold">Verstopfung</p>
 				</div>
 				<div class="flex gap-2">
 					<img src={Check16} alt="Leistung Nr 4" />
-					<p class="leading-none">Heizungsausfall</p>
+					<p class="leading-none font-semibold">Heizungsausfall</p>
 				</div>
 			</div>
 		</div>

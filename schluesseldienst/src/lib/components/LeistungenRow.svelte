@@ -60,7 +60,7 @@
 			>
 				<Button type={2} />
 				<a href="#Anfrage" class="small opacity-70 mobile:mx-auto"
-					>Oder füllen Sie unseren Formular aus</a
+					>Oder füllen Sie unser Formular aus</a
 				>
 			</div>
 		</div>

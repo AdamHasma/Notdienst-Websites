@@ -222,26 +222,26 @@
 								>
 									<div class="flex gap-2">
 										<img src={Check16} alt="Leistung Nr 1" />
-										<p class="leading-none">Stromausfall</p>
+										<p class="leading-none font-semibold">Stromausfall</p>
 									</div>
 									<div class="flex gap-2">
 										<img src={Check16} alt="Leistung Nr 2" />
-										<p class="leading-none">Installationen</p>
+										<p class="leading-none font-semibold">Installationen</p>
 									</div>
 									<div class="flex gap-2">
 										<img src={Check16} alt="Leistung Nr 3" />
-										<p class="leading-none">Reparaturen</p>
+										<p class="leading-none font-semibold">Reparaturen</p>
 									</div>
 									<div class="flex gap-2">
 										<img src={Check16} alt="Leistung Nr 4" />
-										<p class="leading-none">Sicherheitschecks</p>
+										<p class="leading-none font-semibold">Sicherheitschecks</p>
 									</div>
 								</div>
 							</div>
 							<div class="flex flex-col relative items-center">
 								<Button type={2} />
 								<a href="#Anfrage" class="small opacity-70 absolute -bottom-7"
-									>Oder füllen Sie unseren Formular aus</a
+									>Oder füllen Sie unser Formular aus</a
 								>
 							</div>
 						</div>
@@ -264,23 +264,23 @@
 				</div>
 			</div>
 			<div
-				class="flex-col gap-3 tablet:flex-row tablet:flex-wrap tablet:justify-center hidden mobile:flex"
+				class="flex-col gap-3 tablet:flex-row tablet:flex-wrap tablet:justify-center hidden mobile:flex mobile:flex-col"
 			>
 				<div class="flex gap-2">
 					<img src={Check16} alt="Leistung Nr 1" />
-					<p class="leading-none">Stromausfall</p>
+					<p class="leading-none font-semibold">Stromausfall</p>
 				</div>
 				<div class="flex gap-2">
 					<img src={Check16} alt="Leistung Nr 2" />
-					<p class="leading-none">Installationen</p>
+					<p class="leading-none font-semibold">Installationen</p>
 				</div>
 				<div class="flex gap-2">
 					<img src={Check16} alt="Leistung Nr 3" />
-					<p class="leading-none">Reparaturen</p>
+					<p class="leading-none font-semibold">Reparaturen</p>
 				</div>
 				<div class="flex gap-2">
 					<img src={Check16} alt="Leistung Nr 4" />
-					<p class="leading-none">Sicherheitschecks</p>
+					<p class="leading-none font-semibold">Sicherheitschecks</p>
 				</div>
 			</div>
 		</div>
