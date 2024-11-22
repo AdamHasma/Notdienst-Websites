@@ -10,6 +10,8 @@
 	import CTABanner from '../lib/components/CTABanner.svelte';
 	import Testimonial from '../lib/components/Testimonial.svelte';
 	import Faq from '../lib/components/FAQ.svelte';
+	import CookieConsent from '$lib/components/CookieConsent.svelte';
+
 	import PhoneW16 from '../lib/assets/icons/phone-w-16.svg';
 	import MailW16 from '../lib/assets/icons/mail-w-16.svg';
 	import Pin16 from '../lib/assets/icons/pin-w-16.svg';
@@ -67,11 +69,11 @@
 				if (Object.hasOwnProperty.call(data, 'errors')) {
 					status.textContent = data.errors.map((error) => error.message).join(', ');
 				} else {
-					status.textContent = 'Oops! There was a problem submitting your form';
+					status.textContent = 'Ups! Es gab ein Problem beim Absenden Ihres Formulars';
 				}
 			}
 		} catch (error) {
-			status.textContent = 'Oops! There was a problem submitting your form';
+			status.textContent = 'Ups! Es gab ein Problem beim Absenden Ihres Formulars';
 		}
 	}
 </script>
@@ -455,6 +457,15 @@
 				animation={'from-top 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0s both'}
 			>
 				<h2 class="h2-bold text-center">Wer wir sind</h2>
+				<p class="base opacity-70 mt-4 max-w-4xl text-center mx-auto">
+					Wir freuen uns, Ihnen eine breite Palette an handwerklichen Klempnerdienstleistungen zu
+					vermitteln. Unsere Plattform verbindet Sie mit qualifizierten und vor allem zuverlässigen
+					Fachleuten, die Ihre individuellen Anforderungen erfüllen können. Wir sind für Sie da
+					sowohl für Notfälle, als auch für größere Projekte – Wir sind Ihr zuverlässiger Partner in
+					Leipzig. <br /> <br /> Die zuverlässige und erfolgreiche Kommunikation und aktive Zusammenarbeit
+					mit sofort verfügbaren erfahrenen Experten, die Ihre Projekte professionell und effizient umsetzen,
+					stehen für uns an erster Stelle.
+				</p>
 			</Saos>
 			<Saos
 				css_animation=""
